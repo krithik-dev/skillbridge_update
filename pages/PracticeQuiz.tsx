@@ -13,7 +13,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai'
 import { supabase } from '../lib/supabase'
 import { useSession } from '../hooks/useSession'
 
-const GEMINI_API_KEY = 'AIzaSyBvSEofW-r5vO_wQS8PmdYwXkwES2XMdy8' // 🔐 Replace with env variable
+const GEMINI_API_KEY = 'AIzaSyDLPCKBIdNKcaLiH8WqF5mhWXyv2zzF9G0' // 🔐 Replace with env variable
 
 type QuizQuestion = {
   question: string

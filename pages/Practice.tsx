@@ -13,7 +13,7 @@ import { useNavigation, NavigationProp } from '@react-navigation/native'
 import { GoogleGenerativeAI } from '@google/generative-ai'
 
 // 🔐 TODO: Move to environment variable
-const GEMINI_API_KEY = 'AIzaSyBvSEofW-r5vO_wQS8PmdYwXkwES2XMdy8'
+const GEMINI_API_KEY = 'AIzaSyDLPCKBIdNKcaLiH8WqF5mhWXyv2zzF9G0'
 const premadeTopics = ['Python', 'Machine Learning']
 const difficulties = ['Easy', 'Medium', 'Hard']
 

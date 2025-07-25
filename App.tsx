@@ -5,6 +5,13 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { supabase } from './lib/supabase'
 import { Session } from '@supabase/supabase-js'
 
+import { Buffer } from 'buffer'
+global.Buffer = Buffer
+
+import process from 'process'
+global.process = process
+
+
 // Auth Screens
 import Login from './auth/Login'
 import Signup from './auth/Signup'
