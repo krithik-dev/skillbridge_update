@@ -17,7 +17,7 @@ export default function Ask() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.header}>🧠 Ask & Grow</Text>
+      <Text style={styles.header}>🧠 Ask & Grow yourself</Text>
       {features.map((feature) => (
         <TouchableOpacity
           key={feature.title}
