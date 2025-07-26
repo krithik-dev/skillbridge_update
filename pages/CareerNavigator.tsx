@@ -77,7 +77,7 @@ Respond ONLY with a valid compact JSON. Do not add any markdown, explanations or
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.heading}>🧭 Career Navigator</Text>
+      <Text style={styles.heading}>Career Navigator</Text>
 
       <TextInput
         placeholder="Domain (e.g. Web Dev, AI)"
