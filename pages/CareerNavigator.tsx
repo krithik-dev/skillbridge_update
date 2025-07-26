@@ -77,7 +77,7 @@ Respond ONLY with a valid compact JSON. Do not add any markdown, explanations or
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.heading}>🧭 Career Navigator</Text>
+      <Text style={styles.heading}>Career Navigator page</Text>
 
       <TextInput
         placeholder="Domain (e.g. Web Dev, AI)"
@@ -105,7 +105,7 @@ Respond ONLY with a valid compact JSON. Do not add any markdown, explanations or
       />
 
       <TouchableOpacity onPress={handleGenerate} style={styles.button}>
-        <Text style={styles.buttonText}>Generate Roadmap</Text>
+        <Text style={styles.buttonText}>Generate Roadmaps for student</Text>
       </TouchableOpacity>
 
       {loading && <ActivityIndicator size="large" style={{ marginTop: 20 }} />}

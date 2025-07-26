@@ -77,7 +77,7 @@ Return only a JSON array like this:
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.header}>🧠 Practice Center</Text>
+      <Text style={styles.header}>Practice Center update</Text>
 
       <Text style={styles.label}>Enter a topic to generate quiz:</Text>
       <TextInput
