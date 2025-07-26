@@ -34,11 +34,20 @@ import CareerNavigator from './pages/CareerNavigator'
 import PeerSupport from './pages/PeerSupport'
 import ProjectRoadmap from './pages/ProjectRoadmap'
 
+// Aptitude Feature Pages
+import AptitudeHome from './pages/AptitudeHome'
+import CategoryView from './pages/CategoryView'
+import TopicPractice from './pages/TopicPractice'
+import MockTest from './pages/MockTest'
+import ResultsView from './pages/ResultsView'
+import ProgressDashboard from './pages/ProgressDashboard'
+
 const RootStack = createNativeStackNavigator()
 const Tab = createBottomTabNavigator()
 const LearnStack = createNativeStackNavigator()
 const PracticeStack = createNativeStackNavigator()
 const AskStack = createNativeStackNavigator()
+const AptitudeStack = createNativeStackNavigator()
 
 // 📘 Learn Stack
 function LearnStackScreen() {
@@ -84,6 +93,20 @@ function AskStackScreen() {
   )
 }
 
+// 🧠 Aptitude Stack (with all aptitude features)
+function AptitudeStackScreen() {
+  return (
+    <AptitudeStack.Navigator>
+      <AptitudeStack.Screen name="AptitudeHome" component={AptitudeHome} options={{ title: 'Aptitude' }} />
+      <AptitudeStack.Screen name="CategoryView" component={CategoryView} options={{ title: 'Category' }} />
+      <AptitudeStack.Screen name="TopicPractice" component={TopicPractice} options={{ title: 'Practice' }} />
+      <AptitudeStack.Screen name="MockTest" component={MockTest} options={{ title: 'Mock Test' }} />
+      <AptitudeStack.Screen name="ResultsView" component={ResultsView} options={{ title: 'Results' }} />
+      <AptitudeStack.Screen name="ProgressDashboard" component={ProgressDashboard} options={{ title: 'Progress' }} />
+    </AptitudeStack.Navigator>
+  )
+}
+
 // 🧭 Main Tabs
 function MainTabs() {
   return (
@@ -91,6 +114,7 @@ function MainTabs() {
       <Tab.Screen name="Learn" component={LearnStackScreen} />
       <Tab.Screen name="Practice" component={PracticeStackScreen} />
       <Tab.Screen name="Ask" component={AskStackScreen} />
+      <Tab.Screen name="Aptitude" component={AptitudeStackScreen} />
       <Tab.Screen name="Career" component={Career} />
       <Tab.Screen name="Profile" component={Profile} />
     </Tab.Navigator>
