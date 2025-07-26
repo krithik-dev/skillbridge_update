@@ -31,7 +31,7 @@ export default function Profile() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>👤 Profile</Text>
+      <Text style={styles.title}>Profile</Text>
       {session?.user ? (
         <View style={styles.details}>
           <Text style={styles.label}>Email:</Text>
